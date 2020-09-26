@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+</head>
+
+<body>
+	<table border="1">
+		<tr>
+		<td colspan='2' width='100px'></td>
+		<td width='300px'>讀取(read)</td>
+		<td width='300px'>新增(insert)</td>
+		<td width='300px'>刪除(delete)</td>
+		<td width='300px'>查詢(search)</td>
+		<td width='300px'>更新(update)</td>
+		</tr>
+		
+		<tr>
+		<td rowspan='3'>MySQL</td>
+		<td>資料庫(database)</td>
+		<td>show databases;</br>
+		<img src="SQL_database_show.png" width='600px' height='300px'>
+		</td>
+		
+		<td>
+		create database database_name;</br>
+		<img src="SQL_database_create.png" width='600px' height='300px'>
+		</td>
+		
+		<td>
+		drop database database_name;</br>
+		<img src="SQL_database_drop.png" width='600px' height='300px'>
+		</td>
+		
+		<td>
+		</td>
+		
+		<td>
+		
+		</td>
+		
+		</tr>
+		
+		<tr>
+		<td>資料表(table)</td>
+		<td>show tables; </br>
+		<img src="SQL_table_show.png" width='600px' height='300px'>
+		</td>
+		
+		<td>create table table_name (變數 型態);</br>
+		<img src="SQL_table_create.png" width='600px' height='300px'>
+		</td>
+		
+		<td>drop table table_name; </br>
+		<img src="SQL_table_drop.png" width='600px' height='300px'>
+		</td>
+		
+		<td>desc table_name</br>
+		<img src="SQL_table_search.png" width='600px' height='300px'>
+		</td>
+		
+		<td>alter table table_name change 'old_col' 'new_col' 資料型態;</br>
+		<img src="SQL_table_update.png" width='600px' height='300px'>
+		</td>
+		</tr>
+		
+		<tr>
+		<td>欄位(row)</td>
+		
+		<td>select * from table_name</br>
+		<img src="SQL_row_show.png" width='600px' height='300px'>
+		</td>
+		
+		<td>insert into (欄位名稱) value (個別欄位的值);
+		<img src="SQL_row_insert.png" width='600px' height='300px'>
+		</td>
+		
+		<td>delete from table_name where 條件;</br>
+		<img src="SQL_row_drop.png" width='600px' height='300px'>
+		</td>
+		
+		<td>select * from table_name where 條件;</br>
+		<img src="SQL_row_search.png" width='600px' height='300px'>
+		</td>
+		
+		<td>update table_name set 要改的值 where 條件;</br>
+		<img src="SQL_row_update.png" width='600px' height='300px'>
+		</td>
+		
+		</tr>
+		
+				<tr>
+		<td rowspan='3'>Hbase</td>
+		<td>資料表(table)</td>
+        
+		<td>list</br>
+        <img src="create_table.png" width='600' height='450'>
+        </td>
+        
+		<td>create 'Table', 'ColFamily1', 'ColFamily2', 'ColFamily3'...</br>
+        <img src="create_table1.png" width='600' height='450'>
+        </td>
+        
+		<td>1.disable 'table'</br>2.drop 'table'
+        <img src="delete_table.png" width='600' height='450'>
+        </td>
+        
+		<td>describe 'table'</br>
+        <img src="search_table.png" width='600' height='450'>
+        </td>
+        
+		<td>disable or enable 'table'</br>
+        <img src="update_table.png" width='600' height='450'>
+        </td>
+        
+		</tr>
+		
+		<tr>
+		<td>家族(family)</td>
+        
+		<td>describe 'table'
+        <img src="read_family.png" width='600' height='450'>
+        </td>
+        
+		<td>alter 'table', {NAME => 'family'}
+        <img src="insert_family.png" width='600' height='450'>
+        </td>
+        
+		<td>alter 'table', {METHOD => 'delete', NAME => 'family'}
+        <img src="delete_family.png" width='600' height='450'>
+        </td>
+        
+		<td>describe 'table'
+        <img src="read_family.png" width='600' height='450'>
+        </td>
+        
+		<td>alter 'table', {'屬性名' => 'value'}
+        describe 'table'
+        <img src="update_family.png" width='600' height='450'>
+        </td>
+        
+		</tr>
+		
+		<tr>
+		<td>欄位(row)</td>
+        
+		<td>scan 'table'
+        <img src="Row.png" width='600' height='450'>
+        </td>
+        
+		<td>put 'table', 'row', 'family:column', 'value'
+        <img src="insert_row.png" width='600' height='450'>
+        </td>
+        
+		<td>delete 'table', 'row', 'family:column'
+        <img src="delete_row.png" width='600' height='450'>
+        </td>
+        
+		<td>get 'table', 'row'
+        <img src="search_Row.png" width='600' height='450'>
+        </td>
+		<td>put 'table', 'row', 'family:column', 'value'
+        <img src="update_Row.png" width='600' height='450'>
+        </td>
+        
+		</tr>
+		
+		
+	</table>
+	<p></p>
+</body>
+</html>
